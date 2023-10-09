@@ -1,42 +1,45 @@
-import React from "react";
+import Image1 from "./assets/LHF7U_FERDZ.png";
+import Image2 from "./assets/ZPTzu_SHOCKER.png";
 
 const CandidateSelection = () => {
   return (
-    <div className="w-screen h-screen">
-      <div className="absolute bg-cover w-screen h-screen blur-[5px] -left-2 -top-2 bg-[url('src/assets/wave-haikei1.svg')]" />
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-      />
-      <div className="w-screen h-max z-10 flex flex-col bg-[url('src/assets/blurry-gradient-haikei.svg')] bg-cover bg-center">
-        <nav className="w-1/4 self-center flex flex-row justify-between items-center p-1 mb-5 m-5 bg-[rgba(255,255,255,0.4)] rounded-xl backdrop-blur-xl backdrop-contrast-100 backdrop-saturate-100">
-          <span className="material-symbols-outlined scale-150 p-5 px-10 cursor-pointer">
-            arrow_back_ios
-          </span>
-          <span className="material-symbols-outlined scale-150 p-5 px-10 cursor-pointer">
-            arrow_forward_ios
-          </span>
-        </nav>
-        <div className="w-screen h-screen flex flex-row p-5">
-          <div className="flex-[2]">
-            <h1>Photo</h1>
+    <div className="flex flex-col w-screen h-fit bg-[#E5CFF7]">
+      <div className="absolute p-5">
+        <h1 className="text-[#5B0888] font-bold text-6xl">1</h1>
+      </div>
+      <div className="absolute flex flex-row w-max gap-[100px] self-center items-center justify-around p-5 m-4 bg-white rounded-full">
+        <button className="px-10">Perveus</button>
+        <h1 className="font-semibold text-lg">Vote Your Candidate</h1>
+        <button className="px-10">Next</button>
+      </div>
+      <div className="w-screen flex flex-row">
+        <div className="flex-[1] flex flex-row items-end">
+          <div className="z-[1] w-fit h-fit">
+            <img src={Image1} className="w-[500px]" alt="rrq" />
           </div>
-          <div className="flex-[2.3] flex flex-col">
-            <span className="flex flex-col text-6xl font-bold pt-10 -mb-10">
-              <h1 className="bg-[#E5CFF7] w-max p-4 rounded-tr-3xl rounded-tl-3xl text-[#5B0888]">
-                Jhoe Isaku
-              </h1>
-              <h1 className="bg-[#E5CFF7] w-max p-4 rounded-br-3xl rounded-bl-3xl rounded-tr-3xl text-[#5B0888]">
-                Jambaku Kusato
-              </h1>
-            </span>
-            <div className="h-1/2 flex items-center">
-              <h1 className="text-4xl text-[#5B0888]">
-                “Tidak perlu kata-kata yang penting bukti nyata”
-              </h1>
-            </div>
-            <button className="w-1/4 z-10 self-center bg-[#5B0888] p-3 rounded-xl">
-              <p className="text-[#E5CFF7] font-semibold">Vote Now</p>
+          <div className="z-[2] w-fit h-fit">
+            <img src={Image2} alt="rrq" />
+          </div>
+        </div>
+        <div className="flex flex-col h-screen flex-[1.6]">
+          <div className="mt-32 flex flex-col p-5 flex-[1] text-center">
+            <h1 className="text-[#5B0888] font-bold text-6xl">Kesatria Pagi</h1>
+            <p className="text-[#5B0888] font-bold text-4xl">&</p>
+            <h1 className="text-[#5B0888] font-bold text-6xl">
+              Pendekar Malam
+            </h1>
+          </div>
+          <div className="flex justify-center items-center self-center flex-[1] w-max">
+            <h1 className="text-4xl font-semibold font-mono typed text-[#5B0888]">
+              "Tidak Besok, Tapi Hari ini"
+            </h1>
+          </div>
+          <div className="flex flex-[1] w-fit self-center gap-10 flex-row justify-center items-center">
+            <button className="text-2xl flex-[3] text-[#E5CFF7] bg-[#713ABE] p-5 px-24 rounded-3xl">
+              Vote Now
+            </button>
+            <button className="text-2xl flex-[1] text-[#E5CFF7] bg-[#5B0888] p-5 px-14 rounded-3xl">
+              Detail
             </button>
           </div>
         </div>
